@@ -214,7 +214,7 @@ The app repository is then connected to Render:
 
 ![Image showing the application repository on Render.](../../images/3/r2.png)
 
-The connection seems to require that the app repository is public.
+The connection can be made by providing the URL to the repository, which has to be public in this case. Another option is to give Render access to the repository (which can be private or public) via the Render GitHub App.
 
 Next we will define the basic configurations. If the app is <i>not</i> at the root of the repository the <i>Root directory</i> needs to be given a proper value:
 
@@ -224,9 +224,9 @@ After this, the app starts up in the Render. The dashboard tells us the app stat
 
 ![The top left corner of the image shows the status of the application and its URL](../../images/3/r4.png)
 
-According to the [documentation](https://render.com/docs/deploys) every commit to GitHub should redeploy the app. For some reason this is not always working.
+According to the [documentation](https://render.com/docs/deploys) every commit to GitHub should redeploy the app. This seems to work only when Render is given repository access via the Render GitHub App.
 
-Fortunately, it is also possible to manually redeploy the app:
+Fortunately, if for some reason the automatic redeployment is not working, it is also possible to manually redeploy the app:
 
 ![Menu with the option to deploy latest commit highlighted](../../images/3/r5.png)
 
